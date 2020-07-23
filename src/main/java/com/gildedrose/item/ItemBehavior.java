@@ -1,6 +1,15 @@
 package com.gildedrose.item;
 
-public interface ItemQualityBehavior {
+/**
+ * Describes how the item reacts to updates, which occur on the end of each day.
+ */
+@FunctionalInterface
+public interface ItemBehavior {
 
-    void update(ItemWrapper item);
+    /**
+     * The update event which occurs at the end of each day.
+     *
+     * @param item The item on which the update ought to occur.
+     */
+    void update(DynamicItem item);
 }
