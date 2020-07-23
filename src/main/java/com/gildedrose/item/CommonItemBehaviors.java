@@ -17,6 +17,15 @@ public final class CommonItemBehaviors {
     }
 
     /**
+     * Conjured quality behavior is like {@link #standard()} behavior, but will decrease in quality twice as fast.
+     *
+     * @return The conjured item behavior.
+     */
+    public static ItemBehavior conjured() {
+        return ItemBehaviorFactory.doubleQualityOffsetWhenExpired(-2);
+    }
+
+    /**
      * The cheese quality behavior will increase its quality by 1 every update and by 2 after items have expired.
      *
      * @return The cheese item behavior.

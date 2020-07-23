@@ -28,6 +28,10 @@ public class GildedRoseStepDef {
             final ItemBehavior itemBehavior;
 
             switch (type) {
+                case "conjured item":
+                    itemBehavior = conjured();
+                    break;
+
                 case "cheese item":
                     itemBehavior = cheese();
                     break;
