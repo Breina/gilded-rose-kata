@@ -16,7 +16,7 @@ public class GildedRoseStepDef {
     private GildedRose gildedRose;
     private Exception exception;
 
-    @Given("^an? ?(anything|item|cheese item|backstage pass|legendary item) \"([^\"]*)\" with quality (-?\\d+) to be sold in (-?\\d+)$")
+    @Given("^an? ?(anything|item|conjured item|cheese item|backstage pass|legendary item) \"([^\"]*)\" with quality (-?\\d+) to be sold in (-?\\d+)$")
     public void anItem(String type, String name, int quality, int sellIn) {
         exception = null;
 
